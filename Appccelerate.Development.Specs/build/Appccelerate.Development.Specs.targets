@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)..\</SolutionDir>
+  </PropertyGroup>
+
+  <!-- MSpec -->
+  <PropertyGroup>
+    <SpecsFolder>$(SolutionDir)..\Specs\</SpecsFolder>
+  </PropertyGroup>
+  <Target Name="AfterBuild">
+    <MakeDir Directories="$(SpecsFolder)" />
+    <Exec 
+      Condition="'$(Configuration)' == 'Release'" 
+      Command="$(SolutionDir)packages\Machine.Specifications\tools\mspec-clr4.exe --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
+  </Target>
+</Project>
