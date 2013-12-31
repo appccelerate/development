@@ -2,8 +2,8 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>Appccelerate.Development</id>
-    <version>0.1.1</version>
-    <title>Appccelerate.Development</title>
+    <version>0.0.0</version>
+    <title>Appccelerate.Development.ProductionCode</title>
     <authors>Appccelerate team</authors>
     <owners>Appccelerate team</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
