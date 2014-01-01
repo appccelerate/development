@@ -10,6 +10,7 @@
       <Value>csv</Value>
       <Value>remoting</Value>
     </CollectionProperty>
+    <StringProperty Name="MergeSettingsFiles">NoMerge</StringProperty>
   </GlobalSettings>
   <Parsers>
     <Parser ParserId="StyleCop.CSharp.CsParser">
@@ -19,7 +20,7 @@
           <Value>\.Designer\.cs$</Value>
           <Value>\.generated\.cs$</Value>
           <Value>\.g\.i\.cs$</Value>
-		  <Value>TemporaryGeneratedFile_.*\.cs$</Value>
+          <Value>TemporaryGeneratedFile_.*\.cs$</Value>
         </CollectionProperty>
       </ParserSettings>
     </Parser>
