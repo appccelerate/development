@@ -3,11 +3,6 @@
   <PropertyGroup>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)..\</SolutionDir>
   </PropertyGroup>
-  
-  <!-- Global Assembly Info -->
-  <ItemGroup>
-    <Compile Include="Properties\GlobalAssemblyInfo.cs" />
-  </ItemGroup>
 
   <!-- StyleCop -->
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
