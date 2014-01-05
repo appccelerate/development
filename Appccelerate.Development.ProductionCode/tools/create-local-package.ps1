@@ -39,4 +39,4 @@ cd $location
 
 msbuild $solution /verbosity:minimal /p:Configuration=Release
 
-nuget pack .\eventbroker\source\appccelerate.eventbroker.nuspec -outputDirectory $nugetFolder -symbols -version $version 
+nuget pack $nuspec -outputDirectory $nugetFolder -symbols -version $version 
