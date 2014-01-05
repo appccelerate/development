@@ -10,13 +10,12 @@
     <projectUrl>https://github.com/appccelerate/development</projectUrl>
     <iconUrl>https://github.com/appccelerate/appccelerate/raw/master/docs/nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Use for build infrastructure.</description>
+    <description>Used for build infrastructure.</description>
     <copyright>Copyright 2012-2014</copyright>
     <tags>Appccelerate</tags>
 	<releaseNotes></releaseNotes>
     <dependencies>
 		<dependency id="GitFlowVersionTask" />
-		<dependency id="RippleRestoreTask" />
 	</dependencies>	
   </metadata>
 </package>
