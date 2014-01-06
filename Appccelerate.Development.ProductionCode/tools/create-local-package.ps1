@@ -1,18 +1,38 @@
 ﻿[CmdletBinding()]
 Param(
-  [Parameter(Mandatory=$True,Position=1)]
+  [Parameter(Position=1)]
   [string]$solution,
 	
-   [Parameter(Mandatory=$True, Position=2)]
+   [Parameter(Position=2)]
    [string]$nugetFolder
 )
-#if ($args.Count -ne 1)
-#{
-#    Write-Host "usage create-package <project_file>";
-#    Exit;
-#}
 
-#$solution = "c:\projects\appccelerate\repos\fundamentals\source\appccelerate.fundamentals.sln"  #$args[0];
+if (!$solution)
+{
+    Write-Host "no solution provided, using heuristic"
+
+    $source = Split-Path $MyInvocation.MyCommand.Definition -parent | Split-Path -parent | Split-Path -parent | Split-Path -parent
+    $sln = Get-ChildItem -Path $source\* -Include *.sln;
+   
+    if ($sln -is [io.fileinfo])
+    {
+        Write-Host "heuristic found solution file = " $sln.FullName
+        $solution = $sln.FullName;
+    }
+    else
+    {
+        Write-Host "heuristic failed to find solution file. Expected it at " $source
+        Exit;
+    }
+}
+
+if (!$nugetFolder)
+{
+    $repos = Split-Path $MyInvocation.MyCommand.Definition -parent | Split-Path -parent | Split-Path -parent | Split-Path -parent | Split-Path -parent | Split-Path -parent
+    $nugetFolder = Join-Path $repos \NugetPackages
+    Write-Host "no nuget folder, using default " $nugetFolder 
+}
+
 $project = [io.path]::GetFileNameWithoutExtension($solution);
 $folder = [io.directory]::GetParent($solution);
 $nuspec = "" + $folder + "\" + $project + ".nuspec";
