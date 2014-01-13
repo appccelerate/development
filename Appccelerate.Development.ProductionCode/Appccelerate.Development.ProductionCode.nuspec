@@ -16,6 +16,7 @@
 	<releaseNotes></releaseNotes>
     <dependencies>
 		<dependency id="Appccelerate.Development" />
+        <dependency id="Appccelerate.CheckNugetDependenciesTask" />
 	</dependencies>	
   </metadata>
 </package>
