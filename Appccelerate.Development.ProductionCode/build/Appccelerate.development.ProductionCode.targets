@@ -3,5 +3,7 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>Appccelerate.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
+    <CheckNugetDependenciesTask_ProjectFileFullPath>$(MSBuildProjectFullPath)</CheckNugetDependenciesTask_ProjectFileFullPath>
+    <CheckNugetDependenciesTask_NuspecFileFullPath>$(MSBuildProjectDirectory)..\..\$(MSBuildProjectName).nuspec</CheckNugetDependenciesTask_NuspecFileFullPath>
   </PropertyGroup>
 </Project>
