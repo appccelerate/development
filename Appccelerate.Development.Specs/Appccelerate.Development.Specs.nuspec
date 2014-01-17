@@ -18,7 +18,7 @@
         <dependency id="Appccelerate.Development" />
         <dependency id="FluentAssertions" />
         <dependency id="FakeItEasy" />
-        <dependency id="Machine.Specifications" version="0.6.1" /> <!-- change path in .targets when changing version, too -->
+        <dependency id="Machine.Specifications" version="0.6.2" /> <!-- change path in .targets when changing version, too -->
 	</dependencies>	
   </metadata>
 </package>
