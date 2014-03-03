@@ -16,6 +16,7 @@
 	<releaseNotes></releaseNotes>
     <dependencies>
 		<dependency id="GitFlowVersionTask" />
+        <dependency id="StyleCop.MSBuild" version="[4.7.48.2,5) />
 	</dependencies>	
   </metadata>
 </package>
