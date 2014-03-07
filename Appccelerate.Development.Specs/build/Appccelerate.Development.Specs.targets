@@ -12,6 +12,6 @@
     <MakeDir Directories="$(SpecsFolder)" />
     <Exec 
       Condition="'$(Configuration)' == 'Release'" 
-      Command="$(SolutionDir)packages\Machine.Specifications.0.6.2\tools\mspec-clr4.exe --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
+      Command="$(SolutionDir)packages\Machine.Specifications.0.7.0\tools\mspec-clr4.exe --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
   </Target>
 </Project>

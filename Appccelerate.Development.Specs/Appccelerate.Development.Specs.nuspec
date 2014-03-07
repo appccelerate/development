@@ -14,11 +14,12 @@
     <copyright>Copyright 2012-2014</copyright>
     <tags>Appccelerate</tags>
 	<releaseNotes></releaseNotes>
+    <developmentDependency>true</developmentDependency>
     <dependencies>
         <dependency id="Appccelerate.Development" />
         <dependency id="FluentAssertions" />
         <dependency id="FakeItEasy" />
-        <dependency id="Machine.Specifications" version="0.6.2" /> <!-- change path in .targets when changing version, too -->
+        <dependency id="Machine.Specifications" version="0.7" /> <!-- change path in .targets when changing version, too -->
 	</dependencies>	
   </metadata>
 </package>
