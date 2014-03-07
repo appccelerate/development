@@ -3,8 +3,6 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>Appccelerate.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
-    <CheckNugetDependenciesTask_ProjectFileFullPath>$(MSBuildProjectFullPath)</CheckNugetDependenciesTask_ProjectFileFullPath>
-    <CheckNugetDependenciesTask_NuspecFileFullPath>$(MSBuildProjectDirectory)..\..\$(MSBuildProjectName).nuspec</CheckNugetDependenciesTask_NuspecFileFullPath>
     <CheckNugetDependenciesTask_Enabled Condition="$(MSBuildProjectName.EndsWith('.Sample')) == true">false</CheckNugetDependenciesTask_Enabled>
   </PropertyGroup>
 </Project>
