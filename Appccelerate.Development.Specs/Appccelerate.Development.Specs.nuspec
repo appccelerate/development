@@ -2,7 +2,7 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>Appccelerate.Development.Specs</id>
-    <version>0.0.2</version>
+    <version>0.0.0</version>
     <title>Appccelerate.Development.Specs</title>
     <authors>Appccelerate team</authors>
     <owners>Appccelerate team</owners>
@@ -19,7 +19,7 @@
         <dependency id="Appccelerate.Development" />
         <dependency id="FluentAssertions" />
         <dependency id="FakeItEasy" />
-        <dependency id="Machine.Specifications" version="0.7" /> <!-- change path in .targets when changing version, too -->
+        <dependency id="Machine.Specifications" />
 	</dependencies>	
   </metadata>
 </package>

@@ -8,10 +8,14 @@
   <PropertyGroup>
     <SpecsFolder>$(SolutionDir)..\Specs\</SpecsFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <MSpec Include="$(SolutionDir)packages\Machine.Specifications.*\tools\mspec-clr4.exe"/>
+  </ItemGroup>
   <Target Name="AfterBuild">
     <MakeDir Directories="$(SpecsFolder)" />
-    <Exec 
-      Condition="'$(Configuration)' == 'Release'" 
-      Command="$(SolutionDir)packages\Machine.Specifications.0.7.0\tools\mspec-clr4.exe --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
+    <Message Text="@(MSpec->'%(FullPath)')" Importance="High"/>
+    <Message Text="@(MSpec->Count())" Importance="High"/>
+    <Error Condition="'@(MSpec->Count())' != '1'" Text="There are several Machine.Specifications packages installed. Cannot execute specifications." />
+    <Exec Command="@(MSpec->'%(FullPath)') --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
   </Target>
 </Project>
