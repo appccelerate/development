@@ -62,7 +62,13 @@ msbuild $solution /verbosity:minimal /p:Configuration=Release
 if ($LASTEXITCODE -ne 0)
 {
     Write-Host Failed to build
-    Exit
+    Exit 17
 }
 
 nuget pack $nuspec -outputDirectory $nugetFolder -symbols -version $version 
+
+if ($LASTEXITCODE -ne 0)
+{
+    Write-Host Failed to build
+    Exit 42
+}
