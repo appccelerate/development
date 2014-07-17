@@ -16,8 +16,8 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-		<dependency id="GitVersionTask" />
         <dependency id="StyleCop.MSBuild" version="[4.7.48.2,5)" />
+		<dependency id="Appccelerate.VersionTask" />
         <dependency id="Appccelerate.CheckHintPathTask" />
 	</dependencies>	
   </metadata>
