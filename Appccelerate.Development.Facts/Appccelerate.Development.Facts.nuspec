@@ -17,7 +17,8 @@
     <developmentDependency>true</developmentDependency>
     <dependencies>
 		<dependency id="Appccelerate.Development" />
-        <dependency id="xUnit.Extensions" version="1.9.2" /> <!-- when changing version, change it in .targets, too -->
+        <dependency id="xUnit.Extensions" />
+        <dependency id="xunit.MSBuild" />        
         <dependency id="FakeItEasy" />
         <dependency id="FluentAssertions" />
 	</dependencies>	
