@@ -5,13 +5,19 @@
   </PropertyGroup>
 
   <!-- MSpec -->
+  
+  <PropertyGroup>
+    <BuildDependsOn>$(BuildDependsOn);MSpec</BuildDependsOn>
+    <RebuildDependsOn>$(RebuildDependsOn);MSpec</RebuildDependsOn>
+  </PropertyGroup>
+  
   <PropertyGroup>
     <SpecsFolder>$(SolutionDir)..\Specs\</SpecsFolder>
   </PropertyGroup>
   <ItemGroup>
     <MSpec Include="$(SolutionDir)packages\Machine.Specifications.*\tools\mspec-clr4.exe"/>
   </ItemGroup>
-  <Target Name="AfterBuild">
+  <Target Name="MSpec">
     <MakeDir Directories="$(SpecsFolder)" />
     <Error Condition="'@(MSpec->Count())' != '1'" Text="There are several Machine.Specifications packages installed. Cannot execute specifications." />
     <Exec
