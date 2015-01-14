@@ -20,7 +20,6 @@
         <dependency id="FluentAssertions" />
         <dependency id="FakeItEasy" />
         <dependency id="Machine.Specifications" />
-        <dependency id="Machine.Specifications.Runner.Console" />
         <dependency id="xunit.MSBuild" />
 	</dependencies>	
   </metadata>
