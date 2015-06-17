@@ -17,7 +17,8 @@
     <developmentDependency>true</developmentDependency>
     <dependencies>
 		<dependency id="Appccelerate.Development" />
-        <dependency id="xUnit.core" />       
+        <dependency id="xUnit.core" />
+        <dependency id="xunit.runner.msbuild" />        
         <dependency id="FakeItEasy" />
         <dependency id="FluentAssertions" />
 	</dependencies>	
