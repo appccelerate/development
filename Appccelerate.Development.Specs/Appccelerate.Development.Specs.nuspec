@@ -21,7 +21,7 @@
         <dependency id="Appccelerate.Development" />
         <dependency id="FluentAssertions" />
         <dependency id="FakeItEasy" />
-        <dependency id="xBehave.net" />
+        <dependency id="xBehave.core" />
         <dependency id="xunit.runner.msbuild" />
   </dependencies>	
   </metadata>
