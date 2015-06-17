@@ -4,19 +4,17 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)..\</SolutionDir>
   </PropertyGroup>
 
-  <!-- MSpec -->
+  <!-- xBehave-->
     <PropertyGroup>
-    <BuildDependsOn>$(BuildDependsOn);MSpec</BuildDependsOn>
-    <RebuildDependsOn>$(RebuildDependsOn);MSpec</RebuildDependsOn>
+    <BuildDependsOn>$(BuildDependsOn);ExecuteXBehave</BuildDependsOn>
+    <RebuildDependsOn>$(RebuildDependsOn);ExecuteXBehave</RebuildDependsOn>
   </PropertyGroup>
   
-  <PropertyGroup>
-    <SpecsFolder>$(SolutionDir)..\Specs\</SpecsFolder>
+  <PropertyGroup Condition="'$(ExecuteXBehave)' == ''">
+    <ExecuteXBehave Condition="'$(Configuration)' == 'Release'">true</ExecuteXBehave>
   </PropertyGroup>
-  <Target Name="MSpec">
-    <MakeDir Directories="$(SpecsFolder)" />
-    <Exec
-        Condition="'$(Configuration)' == 'Release'"
-        Command="$(MSBuildThisFileDirectory)..\tools\Machine.Specifications\mspec-clr4.exe --progress --silent $(OutputPath)$(AssemblyName).dll --html $(SpecsFolder)$(MSBuildProjectName).html" />
+  
+  <Target Name="ExecuteXBehave" Condition="'$(ExecuteXBehave)' == 'true'" >
+    <xunit Assemblies="$(OutputPath)$(AssemblyName).dll" />
   </Target>
 </Project>
