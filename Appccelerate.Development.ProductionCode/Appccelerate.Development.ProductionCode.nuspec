@@ -17,6 +17,7 @@
     <developmentDependency>true</developmentDependency>
     <dependencies>
 		<dependency id="Appccelerate.Development" />
+		<dependency id="Appccelerate.Development.Analyzers" />
         <dependency id="Appccelerate.CheckNugetDependenciesTask" />
 	</dependencies>	
   </metadata>

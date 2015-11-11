@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <id>Appccelerate.Development.Facts</id>
+    <id>Appccelerate.Development.xBehave</id>
     <version>0.0.0</version>
-    <title>Appccelerate.Development.Facts</title>
+    <title>Appccelerate.Development.xBehave</title>
     <authors>Appccelerate team</authors>
     <owners>Appccelerate team</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
@@ -13,12 +13,15 @@
     <description>Use for build infrastructure.</description>
     <copyright>Copyright 2012-2015</copyright>
     <tags>Appccelerate</tags>
-	<releaseNotes></releaseNotes>
+    <releaseNotes>
+      replaced Machine.Specifications with xBehave.net
+    </releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-		<dependency id="Appccelerate.Development" />
-		<dependency id="Appccelerate.Analyzers" />
-		<dependency id="Appccelerate.xUnit" />
-	</dependencies>	
+        <dependency id="FluentAssertions" />
+        <dependency id="FakeItEasy" />
+        <dependency id="xBehave.core" />
+        <dependency id="xunit.runner.msbuild" />
+  </dependencies>	
   </metadata>
 </package>

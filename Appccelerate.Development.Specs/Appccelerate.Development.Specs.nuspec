@@ -19,10 +19,8 @@
     <developmentDependency>true</developmentDependency>
     <dependencies>
         <dependency id="Appccelerate.Development" />
-        <dependency id="FluentAssertions" />
-        <dependency id="FakeItEasy" />
-        <dependency id="xBehave.core" />
-        <dependency id="xunit.runner.msbuild" />
+        <dependency id="Appccelerate.Analyzers" />
+        <dependency id="Appccelerate.xBehave" />
   </dependencies>	
   </metadata>
 </package>
