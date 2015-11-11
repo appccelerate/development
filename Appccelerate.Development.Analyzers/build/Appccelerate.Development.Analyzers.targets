@@ -7,8 +7,6 @@
 <!-- code analysis -->  
   <PropertyGroup>
     <CodeAnalysisRuleSet>Analyzers.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
-  <NoWarn>$(NoWarn),1573,1591</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
