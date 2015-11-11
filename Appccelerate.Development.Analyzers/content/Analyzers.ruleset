@@ -2,6 +2,8 @@
 <RuleSet Name="Analyzers" ToolsVersion="14.0">
   <IncludeAll Action="Warning" />
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <Rule Id="SA1118" Action="None" />
+    <Rule Id="SA1201" Action="None" />
     <Rule Id="SA1652" Action="None" />
   </Rules>
 </RuleSet>
