@@ -16,7 +16,7 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-        <!-- <dependency id="StyleCop.Analyzers" />  once it is not a prerelease anymore -->
+        <dependency id="StyleCop.Analyzers" />
 	</dependencies>	
   </metadata>
 </package>
