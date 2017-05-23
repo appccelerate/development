@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyCompany("Appccelerate")]
 [assembly: AssemblyProduct("Appccelerate")]
-[assembly: AssemblyCopyright("Copyright ©  2008-2015")]
+[assembly: AssemblyCopyright("Copyright ©  2008-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
