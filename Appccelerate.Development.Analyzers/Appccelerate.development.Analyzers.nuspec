@@ -16,7 +16,7 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-        <dependency id="StyleCop.Analyzers" />
+        <dependency id="StyleCop.Analyzers" version="1.0.2" />
 	</dependencies>	
   </metadata>
 </package>

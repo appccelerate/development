@@ -16,7 +16,7 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-		<dependency id="Appccelerate.Development.ProductionCode" />
+		<dependency id="Appccelerate.Development.ProductionCode" version="1.26.0" />
 	</dependencies>	
   </metadata>
 </package>

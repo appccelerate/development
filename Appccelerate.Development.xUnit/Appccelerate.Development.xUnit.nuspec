@@ -16,10 +16,10 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-		<dependency id="xUnit.core" />
-        <dependency id="xunit.runner.msbuild" />        
-        <dependency id="FakeItEasy" />
-        <dependency id="FluentAssertions" />
-	</dependencies>	
+		  <dependency id="xUnit.core" version="2.2.0" />
+      <dependency id="FluentAssertions" version="4.19.3" />
+      <dependency id="FakeItEasy" version="3.4.2" />
+      <dependency id="xunit.runner.msbuild" version="2.2.0" />
+	  </dependencies>	
   </metadata>
 </package>

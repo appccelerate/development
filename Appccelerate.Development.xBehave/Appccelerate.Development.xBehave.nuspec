@@ -18,10 +18,10 @@
     </releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-        <dependency id="FluentAssertions" />
-        <dependency id="FakeItEasy" />
-        <dependency id="xBehave.core" />
-        <dependency id="xunit.runner.msbuild" />
+        <dependency id="FluentAssertions" version="4.19.3" />
+        <dependency id="FakeItEasy" version="3.4.2" />
+        <dependency id="xBehave.core" version="2.1.4" />
+        <dependency id="xunit.runner.msbuild" version="2.2.0" />
   </dependencies>	
   </metadata>
 </package>

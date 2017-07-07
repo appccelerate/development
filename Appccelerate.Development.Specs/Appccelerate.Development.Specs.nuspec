@@ -18,9 +18,9 @@
     </releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-        <dependency id="Appccelerate.Development" />
-        <dependency id="Appccelerate.Development.Analyzers" />
-        <dependency id="Appccelerate.Development.xBehave" />
+        <dependency id="Appccelerate.Development" version="1.26.0" />
+        <dependency id="Appccelerate.Development.Analyzers" version="1.26.0" />
+        <dependency id="Appccelerate.Development.xBehave" version="1.26.0" />
   </dependencies>	
   </metadata>
 </package>

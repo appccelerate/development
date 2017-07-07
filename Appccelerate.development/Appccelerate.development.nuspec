@@ -16,7 +16,7 @@
 	<releaseNotes></releaseNotes>
     <developmentDependency>true</developmentDependency>
     <dependencies>
-        <dependency id="Appccelerate.VersionTask" />
+        <dependency id="Appccelerate.VersionTask" version="1.22" />
 	</dependencies>	
   </metadata>
 </package>
